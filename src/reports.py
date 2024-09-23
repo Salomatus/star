@@ -39,7 +39,6 @@ def report_to_file(filename: str = "function_operation_report.txt") -> Callable:
     return decorator
 
 
-# дата гггг.мм.дд
 @report_to_file_default
 def spending_by_category(transactions: pd.DataFrame, category: str, date: Any = None) -> Any:
     """Функция возвращает траты по заданной категории за последние три месяца
